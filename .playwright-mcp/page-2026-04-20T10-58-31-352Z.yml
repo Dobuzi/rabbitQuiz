@@ -1,0 +1,23 @@
+- main [ref=e2]:
+  - generic [ref=e3]:
+    - paragraph [ref=e4]: 비밀 퀴즈 동화
+    - heading "토끼와 마술사의 비밀 퀴즈" [level=1] [ref=e5]
+    - paragraph [ref=e6]: 1 / 5
+  - region "게임 무대" [ref=e7]:
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - generic [ref=e15]: 🐰
+        - generic [ref=e16]: 토끼
+      - generic [ref=e17]:
+        - generic [ref=e18]: 🎩
+        - generic [ref=e19]: 마술사
+    - generic [ref=e20]: 별의 방
+  - generic [ref=e21]:
+    - paragraph [ref=e22]: 천장의 별들이 토끼를 따라 깜빡였어요.
+    - heading "별의 방" [level=2] [ref=e29]
+    - paragraph [ref=e24]: 별빛이 둥실 떠오른 방에서 마술사는 은빛 지팡이로 하늘을 가리켰어요. “가장 밝은 길잡이 별을 골라야 다음 문이 열려.” 길을 알려 주는 반짝이는 것은 무엇일까요?
+    - paragraph [ref=e25]
+  - region "선택지" [ref=e26]:
+    - button "1. 노란 별" [ref=e30] [cursor=pointer]
+    - button "2. 빗자루" [ref=e31] [cursor=pointer]
+    - button "3. 찻잔" [ref=e32] [cursor=pointer]

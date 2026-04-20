@@ -1,0 +1,23 @@
+- main [ref=e2]:
+  - generic [ref=e3]:
+    - paragraph [ref=e4]: 비밀 퀴즈 동화
+    - heading "토끼와 마술사의 비밀 퀴즈" [level=1] [ref=e5]
+    - paragraph [ref=e6]: 2 / 5
+  - region "게임 무대" [ref=e7]:
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - generic [ref=e15]: 🐰
+        - generic [ref=e16]: 토끼
+      - generic [ref=e17]:
+        - generic [ref=e18]: 🎩
+        - generic [ref=e19]: 마술사
+    - generic [ref=e20]: 카드의 방
+  - generic [ref=e21]:
+    - paragraph [ref=e22]: 카드들이 나풀나풀 춤을 추기 시작했어요.
+    - heading "카드의 방" [level=2] [ref=e36]
+    - paragraph [ref=e24]: 공중에 카드가 둥둥 떠다녔어요. 마술사는 웃으며 “같은 모양끼리 친구가 되지” 하고 속삭였어요. 하트 카드와 친구가 될 카드는 무엇일까요?
+    - paragraph [ref=e25]
+  - region "선택지" [ref=e26]:
+    - button "1. 하트 카드" [ref=e37] [cursor=pointer]
+    - button "2. 별 카드" [ref=e38] [cursor=pointer]
+    - button "3. 달 카드" [ref=e39] [cursor=pointer]

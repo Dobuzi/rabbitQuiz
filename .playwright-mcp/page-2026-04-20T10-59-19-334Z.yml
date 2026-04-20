@@ -1,0 +1,23 @@
+- main [ref=e2]:
+  - generic [ref=e3]:
+    - paragraph [ref=e4]: 비밀 퀴즈 동화
+    - heading "토끼와 마술사의 비밀 퀴즈" [level=1] [ref=e5]
+    - paragraph [ref=e6]: 4 / 5
+  - region "게임 무대" [ref=e7]:
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - generic [ref=e15]: 🐰
+        - generic [ref=e16]: 토끼
+      - generic [ref=e17]:
+        - generic [ref=e18]: 🎩
+        - generic [ref=e19]: 마술사
+    - generic [ref=e20]: 달빛의 방
+  - generic [ref=e21]:
+    - paragraph [ref=e22]: 달빛이 조용히 방을 감싸 안았어요.
+    - heading "달빛의 방" [level=2] [ref=e44]
+    - paragraph [ref=e24]: 하얀 달빛이 방 안을 포근하게 비췄어요. 마술사는 목소리를 낮추며 말했어요. “달빛에는 조용한 친구가 잘 어울린단다.” 달빛과 가장 잘 어울리는 친구는 누구일까요?
+    - paragraph [ref=e25]
+  - region "선택지" [ref=e26]:
+    - button "1. 조용히 앉은 토끼" [active] [ref=e45] [cursor=pointer]
+    - button "2. 쿵쾅거리는 북" [ref=e46] [cursor=pointer]
+    - button "3. 소리치는 나팔" [ref=e47] [cursor=pointer]
