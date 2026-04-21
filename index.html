@@ -13,28 +13,44 @@
   <body>
     <main class="game-shell">
       <header class="game-header">
-        <p class="game-kicker">비밀 퀴즈 동화</p>
-        <h1>토끼와 마술사의 비밀 퀴즈</h1>
-        <p id="progress-text" class="progress-text">시작 전</p>
+        <div class="title-block">
+          <p class="game-kicker">비밀 퀴즈 동화</p>
+          <h1>토끼와 마술사의 비밀 퀴즈</h1>
+          <p id="progress-text" class="progress-text">시작 전</p>
+        </div>
+        <div class="header-side">
+          <p id="chapter-label" class="chapter-label">프롤로그</p>
+          <div id="chapter-strip" class="chapter-strip" aria-label="모험 경로"></div>
+        </div>
       </header>
 
       <section id="stage-panel" class="stage-panel" data-theme="entrance" aria-label="게임 무대">
+        <div class="stage-glow"></div>
         <div class="stage-backdrop"></div>
         <div class="stars stars-left"></div>
         <div class="stars stars-right"></div>
         <div class="stage-curtain stage-curtain-left"></div>
         <div class="stage-curtain stage-curtain-right"></div>
+        <div class="story-hud">
+          <div class="story-hud-label">이번 장면</div>
+          <p id="scene-task" class="scene-task">토끼와 함께 탑 안으로 첫걸음을 내딛어요.</p>
+        </div>
         <div class="stage-actors">
           <div id="rabbit-actor" class="actor rabbit" aria-hidden="true">
+            <p id="rabbit-line" class="actor-line actor-line-rabbit">조금 떨리지만, 한 칸씩 가 볼래.</p>
             <span class="actor-face">🐰</span>
             <span class="actor-name">토끼</span>
           </div>
           <div id="magician-actor" class="actor magician" aria-hidden="true">
+            <p id="magician-line" class="actor-line actor-line-magician">천천히 들어오렴. 네가 고른 답이 길을 밝혀 줄 거야.</p>
             <span class="actor-face">🎩</span>
             <span class="actor-name">마술사</span>
           </div>
         </div>
-        <div id="room-badge" class="room-badge">탑의 입구</div>
+        <div class="stage-footer">
+          <div id="room-badge" class="room-badge">탑의 입구</div>
+          <p id="choice-guide" class="choice-guide">버튼을 누르면 이야기가 시작돼요.</p>
+        </div>
       </section>
 
       <section class="story-panel" aria-live="polite">
@@ -44,7 +60,13 @@
         <p id="feedback-text" class="feedback-text"></p>
       </section>
 
-      <section id="choices-panel" class="choices-panel" aria-label="선택지"></section>
+      <section class="choices-shell">
+        <div class="choices-head">
+          <p class="choices-kicker">토끼의 선택</p>
+          <p id="choices-title" class="choices-title">이야기를 시작해 볼까요?</p>
+        </div>
+        <section id="choices-panel" class="choices-panel" aria-label="선택지"></section>
+      </section>
 
       <section class="control-panel">
         <button id="primary-action" type="button">시작하기</button>
