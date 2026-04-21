@@ -1,0 +1,111 @@
+export const scenes = [
+  {
+    id: "start",
+    type: "intro",
+    theme: "entrance",
+    room: "탑의 입구",
+    progress: "0 / 5",
+    caption: "문이 반짝이며 천천히 열렸어요.",
+    title: "모험의 시작",
+    story:
+      "작은 토끼는 반짝이는 탑 문 앞에 섰어요. 문이 열리자 다정한 마술사가 웃으며 말했어요.\n\n“별빛, 카드, 달빛의 방을 지나면 내 비밀을 보여 줄게.”",
+    actionLabel: "탑 안으로 들어가기",
+  },
+  {
+    id: "star-quiz",
+    type: "quiz",
+    theme: "star",
+    room: "별의 방",
+    progress: "1 / 5",
+    caption: "천장의 별들이 토끼를 따라 깜빡였어요.",
+    title: "별의 방",
+    story:
+      "별이 가득한 방에 들어오자 길이 세 갈래로 나뉘었어요. 마술사가 말했어요. “하늘에서 반짝이는 것을 고르면 돼.”",
+    question: "하늘에서 반짝이는 것은 무엇일까요?",
+    choices: [
+      { label: "빗자루", correct: false, hint: "빗자루는 타고 날 수 있어도 하늘에서 반짝이지 않아요." },
+      { label: "별", correct: true, hint: "별은 밤하늘에서 반짝반짝 빛나요." },
+      { label: "찻잔", correct: false, hint: "찻잔은 차를 마실 때 쓰는 물건이에요." },
+    ],
+  },
+  {
+    id: "card-quiz-1",
+    type: "quiz",
+    theme: "card",
+    room: "카드의 방",
+    progress: "2 / 5",
+    caption: "카드들이 나풀나풀 춤을 추기 시작했어요.",
+    title: "카드의 방",
+    story:
+      "공중에 카드가 둥둥 떠다녔어요. 마술사는 하트 카드 하나를 보여 주며 말했어요. “같은 모양 친구를 찾아 줘.”",
+    question: "하트 카드와 같은 모양은 무엇일까요?",
+    choices: [
+      { label: "별 카드", correct: false, hint: "별은 하트와 모양이 달라요." },
+      { label: "세모 카드", correct: false, hint: "세모도 하트와는 다른 모양이에요." },
+      { label: "하트 카드", correct: true, hint: "같은 모양끼리 짝이 돼요." },
+    ],
+  },
+  {
+    id: "card-quiz-2",
+    type: "quiz",
+    theme: "card",
+    room: "카드의 방",
+    progress: "3 / 5",
+    caption: "카드 다리가 반짝이며 길을 만들었어요.",
+    title: "카드 다리",
+    story:
+      "카드 다리 앞에 작은 바람이 불었어요. 마술사가 말했어요. “웃는 얼굴로 건너면 다리가 덜 흔들린단다.”",
+    question: "어떤 얼굴로 가면 좋을까요?",
+    choices: [
+      { label: "웃는 얼굴", correct: true, hint: "웃는 얼굴은 밝고 가벼운 마음을 보여 줘요." },
+      { label: "우는 얼굴", correct: false, hint: "지금은 무섭다고 울지 않아도 괜찮아요." },
+      { label: "화난 얼굴", correct: false, hint: "화난 얼굴은 다리를 더 무겁게 느끼게 해요." },
+    ],
+  },
+  {
+    id: "moon-quiz-1",
+    type: "quiz",
+    theme: "moon",
+    room: "달빛의 방",
+    progress: "4 / 5",
+    caption: "달빛이 조용히 방을 감싸 안았어요.",
+    title: "달빛의 방",
+    story:
+      "하얀 달빛 아래에는 잠든 새들이 있었어요. 마술사가 손가락을 입에 대며 작게 말했어요. “이 방에서는 조용해야 해.”",
+    question: "이 방에서 하면 좋은 행동은 무엇일까요?",
+    choices: [
+      { label: "큰 소리로 노래하기", correct: false, hint: "잠든 새들이 깰 수 있어요." },
+      { label: "조용히 걷기", correct: true, hint: "달빛의 방에서는 조용조용 움직여요." },
+      { label: "북을 세게 치기", correct: false, hint: "북 소리는 너무 커요." },
+    ],
+  },
+  {
+    id: "moon-quiz-2",
+    type: "quiz",
+    theme: "moon",
+    room: "비밀 문 앞",
+    progress: "5 / 5",
+    caption: "마지막 문이 은빛 숨결처럼 반짝였어요.",
+    title: "비밀 문",
+    story:
+      "마지막 문 앞에서 마술사가 미소 지었어요. “이 문은 힘센 손보다 따뜻한 마음을 더 좋아한단다.”",
+    question: "비밀 문을 여는 데 필요한 것은 무엇일까요?",
+    choices: [
+      { label: "커다란 망치", correct: false, hint: "이 문은 세게 두드린다고 열리지 않아요." },
+      { label: "시끄러운 종", correct: false, hint: "시끄러운 소리는 이 문이 좋아하지 않아요." },
+      { label: "따뜻한 마음", correct: true, hint: "마술사가 문을 여는 비밀을 바로 말해 줬어요." },
+    ],
+  },
+  {
+    id: "ending",
+    type: "ending",
+    theme: "secret",
+    room: "비밀의 방",
+    progress: "완료",
+    caption: "문이 열리자 가장 따뜻한 빛이 쏟아졌어요.",
+    title: "마술사의 비밀",
+    story:
+      "비밀의 방 안에는 반짝이는 보물이 아니라 작은 거울이 있었어요. 거울 속 토끼를 본 마술사가 말했어요.\n\n“내 비밀은 다른 이를 기쁘게 보는 마음이란다.”\n\n토끼는 활짝 웃으며 오늘의 모험을 꼭 기억하기로 했어요.",
+    actionLabel: "처음부터 다시 하기",
+  },
+];

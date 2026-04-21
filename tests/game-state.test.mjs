@@ -8,6 +8,7 @@ import {
   advanceScene,
   restartGame,
 } from "../src/game-state.js";
+import { scenes as appScenes } from "../src/scenes.js";
 
 const scenes = [
   {
@@ -85,4 +86,28 @@ test("restartGame returns to the opening scene and clears feedback", () => {
   assert.equal(resetState.sceneIndex, 0);
   assert.equal(resetState.feedback, "");
   assert.equal(resetState.lastAnswerCorrect, false);
+});
+
+test("app quiz answers are not all pinned to the first choice", () => {
+  const quizScenes = appScenes.filter((scene) => scene.type === "quiz");
+  const correctIndexes = quizScenes.map((scene) =>
+    scene.choices.findIndex((choice) => choice.correct),
+  );
+
+  assert.deepEqual(correctIndexes, [1, 2, 0, 1, 2]);
+});
+
+test("app quiz prompts stay concrete and use a single correct answer", () => {
+  const quizScenes = appScenes.filter((scene) => scene.type === "quiz");
+
+  assert.equal(quizScenes.length, 5);
+
+  for (const scene of quizScenes) {
+    assert.equal(
+      scene.choices.filter((choice) => choice.correct).length,
+      1,
+      `${scene.id} should have one correct answer`,
+    );
+    assert.match(scene.question, /무엇|어떤/);
+  }
 });
